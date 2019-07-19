@@ -1,1 +1,34 @@
 // Mixins Here
+
+.flex-row(){
+    display: flex;
+    flex-direction:row;
+}
+
+.flex-column(){
+    display: flex;
+    flex-direction:column;
+}
+
+.no-decoration{
+    text-decoration: none;
+}
+
+.button-style(@bgd-clr, @font-clr) {
+    text-align: center;
+    background: @bgd-clr;
+    color: @font-clr;
+    font-size: 2rem;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 30%;
+    
+    &:hover {
+        .animation-shake();
+        background: @font-clr;
+        color: @bgd-clr;
+        border: 1px solid @bgd-clr;
+    }
+}
+
+
