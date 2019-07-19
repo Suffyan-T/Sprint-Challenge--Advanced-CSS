@@ -1,1 +1,29 @@
 // Navigation code here
+.navigation {
+    .flex-column();
+    align-items: center;
+    background: @nav-bg;
+    border: 1px solid @nav-border;
+    width: 100%;
+
+    h1 {
+        font-size: 5rem;
+
+    }
+
+    nav {
+        .flex-row();
+
+        a {
+            .no-decoration();
+            margin: 15px 1.6rem;
+            color: @nav-font;
+            font-size: 1.6rem;
+
+        }
+    }
+}
+
+
+
+  
